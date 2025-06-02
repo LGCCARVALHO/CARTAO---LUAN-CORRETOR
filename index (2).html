@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cartão Digital - Luan Carvalho</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .card {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      max-width: 360px;
+    }
+    .card h1 {
+      color: #0a1f44;
+      margin-bottom: 5px;
+    }
+    .card p {
+      color: #555;
+      margin: 5px 0 15px;
+    }
+    .highlight {
+      background-color: #0a1f44;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 10px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      display: inline-block;
+    }
+    .whatsapp-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #25d366;
+      color: white;
+      text-decoration: none;
+      padding: 12px 20px;
+      border-radius: 50px;
+      font-size: 16px;
+      font-weight: bold;
+      margin: 20px auto;
+      width: fit-content;
+    }
+    .whatsapp-button img {
+      width: 24px;
+      height: 24px;
+      margin-right: 10px;
+    }
+    .qrcode {
+      margin-top: 20px;
+    }
+    .qrcode img {
+      width: 120px;
+      height: 120px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Luan Carvalho</h1>
+    <p>Corretor de Imóveis</p>
+    <p>CRECI/MG 61109</p>
+
+    <div class="highlight">Compra, venda e locação</div>
+
+    <a class="whatsapp-button" href="https://wa.me/5531983553181" target="_blank">
+      <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" alt="WhatsApp"> Fale comigo
+    </a>
+
+    <div class="qrcode">
+      <img src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=https://lgccarvalho.github.io/CARTAO---LUAN-CORRETOR/" alt="QR Code">
+    </div>
+  </div>
+</body>
+</html>
