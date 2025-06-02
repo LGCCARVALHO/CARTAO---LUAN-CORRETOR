@@ -6,45 +6,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luan Carvalho - Corretor de Imóveis</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        * {
             margin: 0;
             padding: 0;
-            background: url('https://images.unsplash.com/photo-1505761671935-60b3a7427bad?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80') no-repeat center center fixed;
-            background-size: cover;
-            color: #fff;
+            box-sizing: border-box;
+        }
+        body, html {
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+        .slideshow-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+        }
+        .slideshow-container img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            animation: fade 20s infinite;
+        }
+        .slideshow-container img:nth-child(1) { animation-delay: 0s; }
+        .slideshow-container img:nth-child(2) { animation-delay: 6s; }
+        .slideshow-container img:nth-child(3) { animation-delay: 12s; }
+
+        @keyframes fade {
+            0% { opacity: 0; }
+            10% { opacity: 1; }
+            30% { opacity: 1; }
+            40% { opacity: 0; }
+            100% { opacity: 0; }
         }
         .overlay {
-            background-color: rgba(10, 29, 59, 0.85);
-            padding: 30px;
-            min-height: 100vh;
+            background-color: rgba(10, 29, 59, 0.8);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
             display: flex;
-            flex-direction: column;
             align-items: center;
             justify-content: center;
+            text-align: center;
+            padding: 20px;
         }
         .card {
-            background-color: rgba(17, 46, 90, 0.95);
+            background-color: rgba(17, 46, 90, 0.9);
+            padding: 30px;
             border-radius: 20px;
-            padding: 30px 20px;
             max-width: 400px;
-            text-align: center;
             box-shadow: 0 0 20px rgba(0,0,0,0.5);
+            color: #fff;
         }
         h1 {
-            margin: 0 0 10px;
-            font-size: 28px;
+            font-size: 30px;
+            margin-bottom: 10px;
         }
         h2 {
-            margin: 5px 0 20px;
             font-size: 18px;
-            font-weight: normal;
+            margin-bottom: 20px;
         }
         .services {
             background-color: #1e3e73;
             padding: 12px;
             border-radius: 10px;
-            margin: 20px 0;
+            margin-bottom: 20px;
             font-size: 18px;
             font-weight: bold;
         }
@@ -57,7 +88,6 @@
             text-decoration: none;
             font-size: 18px;
             display: inline-block;
-            margin-top: 20px;
         }
         .whatsapp-btn:hover {
             background-color: #20b954;
@@ -65,6 +95,11 @@
     </style>
 </head>
 <body>
+    <div class="slideshow-container">
+        <img src="https://images.unsplash.com/photo-1574191441226-6bdfb06f9096?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="BH 1">
+        <img src="https://images.unsplash.com/photo-1516116216624-53e697fedbe9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="BH 2">
+        <img src="https://images.unsplash.com/photo-1559589689-577aabd1db4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="BH 3">
+    </div>
     <div class="overlay">
         <div class="card">
             <h1>Luan Carvalho</h1>
