@@ -2,58 +2,68 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cartão Digital - Luan Carvalho</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      color: white;
-      text-align: center;
-    }
-    .mosaico {
-      display: flex;
-      flex-wrap: wrap;
-    }
-    .mosaico img {
-      width: 33.3%;
-      height: 250px;
-      object-fit: cover;
-    }
-    .cartao {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background-color: rgba(0,0,50,0.8);
-      padding: 30px;
-      border-radius: 20px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    }
-    .whatsapp-btn {
-      margin-top: 20px;
-      display: inline-block;
-      background-color: #25D366;
-      color: white;
-      padding: 12px 25px;
-      border-radius: 30px;
-      text-decoration: none;
-      font-size: 18px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luan Carvalho - Corretor de Imóveis</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: #333;
+            color: #fff;
+        }
+        .mosaico {
+            display: flex;
+            flex-wrap: wrap;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .mosaico img {
+            width: 33.33%;
+            object-fit: cover;
+            height: 100vh;
+        }
+        .cartao {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #2c2e4a;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+            text-align: center;
+        }
+        .cartao h1 {
+            margin: 0 0 10px;
+        }
+        .cartao p {
+            margin: 5px 0;
+        }
+        .whatsapp-btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #25D366;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-  <div class="mosaico">
-    <img src="bh1.jpg" alt="Belo Horizonte 1">
-    <img src="bh2.jpg" alt="Belo Horizonte 2">
-    <img src="bh3.jpg" alt="Belo Horizonte 3">
-  </div>
-  <div class="cartao">
-    <h1>Luan Carvalho</h1>
-    <h2>Corretor de Imóveis</h2>
-    <p>CRECI/MG 61109</p>
-    <a class="whatsapp-btn" href="https://wa.me/5531983553181" target="_blank">Fale comigo no WhatsApp</a>
-  </div>
+    <div class="mosaico">
+        <img src="imagem1.jpg" alt="BH 1">
+        <img src="imagem2.jpg" alt="BH 2">
+        <img src="imagem3.jpg" alt="BH 3">
+    </div>
+    <div class="cartao">
+        <h1>Luan Carvalho</h1>
+        <p>Corretor de Imóveis</p>
+        <p>CRECI/MG 61109</p>
+        <a class="whatsapp-btn" href="https://wa.me/5531999999999" target="_blank">Fale comigo no WhatsApp</a>
+    </div>
 </body>
 </html>
