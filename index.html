@@ -2,93 +2,58 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luan Carvalho - Corretor de Imóveis</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body, html { height: 100%; font-family: Arial, sans-serif; }
-
-        .slideshow-container {
-            position: fixed;
-            top: 0; left: 0;
-            width: 100%; height: 100%;
-            overflow: hidden;
-            z-index: -1;
-        }
-        .slideshow-container img {
-            position: absolute;
-            width: 100%; height: 100%;
-            object-fit: cover;
-            animation: fade 20s infinite;
-        }
-        .slideshow-container img:nth-child(1) { animation-delay: 0s; }
-        .slideshow-container img:nth-child(2) { animation-delay: 6s; }
-        .slideshow-container img:nth-child(3) { animation-delay: 12s; }
-
-        @keyframes fade {
-            0% { opacity: 0; }
-            10% { opacity: 1; }
-            30% { opacity: 1; }
-            40% { opacity: 0; }
-            100% { opacity: 0; }
-        }
-
-        .overlay {
-            background-color: rgba(10, 29, 59, 0.8);
-            position: absolute;
-            width: 100%; height: 100%;
-            top: 0; left: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 20px;
-        }
-        .card {
-            background-color: rgba(17, 46, 90, 0.9);
-            padding: 30px;
-            border-radius: 20px;
-            max-width: 400px;
-            box-shadow: 0 0 20px rgba(0,0,0,0.5);
-            color: #fff;
-        }
-        h1 { font-size: 30px; margin-bottom: 10px; }
-        h2 { font-size: 18px; margin-bottom: 20px; }
-        .services {
-            background-color: #1e3e73;
-            padding: 12px;
-            border-radius: 10px;
-            margin-bottom: 20px;
-            font-size: 18px;
-            font-weight: bold;
-        }
-        .whatsapp-btn {
-            background-color: #25D366;
-            color: #fff;
-            padding: 15px 25px;
-            border: none;
-            border-radius: 10px;
-            text-decoration: none;
-            font-size: 18px;
-            display: inline-block;
-        }
-        .whatsapp-btn:hover { background-color: #20b954; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cartão Digital - Luan Carvalho</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: white;
+      text-align: center;
+    }
+    .mosaico {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .mosaico img {
+      width: 33.3%;
+      height: 250px;
+      object-fit: cover;
+    }
+    .cartao {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(0,0,50,0.8);
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+    .whatsapp-btn {
+      margin-top: 20px;
+      display: inline-block;
+      background-color: #25D366;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-size: 18px;
+    }
+  </style>
 </head>
 <body>
-    <div class="slideshow-container">
-        <img src="bg1.jpg" alt="BH 1">
-        <img src="bg2.jpg" alt="BH 2">
-        <img src="bg3.jpg" alt="BH 3">
-    </div>
-    <div class="overlay">
-        <div class="card">
-            <h1>Luan Carvalho</h1>
-            <h2>Corretor de Imóveis | CRECI/MG 61109</h2>
-            <div class="services">Compra, Venda e Locação</div>
-            <a class="whatsapp-btn" href="https://wa.me/5531983553181" target="_blank">Fale comigo no WhatsApp</a>
-        </div>
-    </div>
+  <div class="mosaico">
+    <img src="bh1.jpg" alt="Belo Horizonte 1">
+    <img src="bh2.jpg" alt="Belo Horizonte 2">
+    <img src="bh3.jpg" alt="Belo Horizonte 3">
+  </div>
+  <div class="cartao">
+    <h1>Luan Carvalho</h1>
+    <h2>Corretor de Imóveis</h2>
+    <p>CRECI/MG 61109</p>
+    <a class="whatsapp-btn" href="https://wa.me/5531983553181" target="_blank">Fale comigo no WhatsApp</a>
+  </div>
 </body>
 </html>
